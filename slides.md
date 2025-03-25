@@ -211,9 +211,36 @@ transition: slide-left
 # Creating modules exports and `require()`
 (30 min) Use of `require()` function
 
-- f
+- if using ES6 import, ensure package.json has `"type": "module"`
+```js
+// index.js
+import { factorial, sum } from "./math.js"
+console.log(factorial, sum)
+```
+
+- if using CJS, ensure package.json no longer has `"type": "module",`
+```js
+const { factorial, sum } = require("./math");
+console.log(factorial, sum)
+```
+```js
+// math.js
+function factorial(n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+function sum(a, b) { return a + b }
+
+module.exports = { 
+  factorial, 
+  sum, 
+};
+```
 
 <!--
+- console.log(module) from both math.js and math2.js
+- CJS and ES6 import is incompatible
 -->
 
 ---
@@ -249,9 +276,14 @@ transition: slide-left
 (5 min) Utilize the command line
 
 - common 3rd party modules:  `body-parser` `dotenv` `uuid` `cors` `lodash` `date-fns`
-- Demo: I will upload my own js library to npm so you can download it
+- Demo: Download my own [myWords library](https://www.npmjs.com/package/mywords) from npm so you can use it for [madlibs](https://images.squarespace-cdn.com/content/v1/56f0887b1bbee0ad7d49d1a8/1490014586011-8A2DBQCGUQZYTH1ZIXMC/OT+Activity+of+the+Day-+Handwriting+Skills) 
+- Problem: If wish to use module for front end, VS Code Live Server won't work with node_modules -- why not?
+- Solution: need a module bundler like Parcel or Webpack
 
 <!--
+- import { myWords } from "mywords";
+- const story = `<p width: 500px; font-size: 24px; line-height: 1.5>${myWords.getWord()}...`
+- document.body.innerHTML = story
 -->
 
 ---
