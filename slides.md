@@ -255,7 +255,10 @@ class: text-left
 
 🍦 Cool Tips, Trends and Resources:
 
-- ▶️ [Chrome for Devs Channel](https://www.youtube.com/@ChromeDevs/videos)
+- ▶️ [Run Node scripts from command line](https://nodejs.org/en/learn/command-line/run-nodejs-scripts-from-the-command-line)
+- ▶️ [Node.js crash course](https://www.youtube.com/watch?v=32M1al-Y6Ag)
+- 🍎 [Node tutorial](https://www.w3schools.com/nodejs/nodejs_modules.asp)
+- 📂 [File system Module](https://github.com/nodejs/nodejs.dev/blob/aa4239e87a5adc992fdb709c20aebb5f6da77f86/content/learn/node-js-modules/node-module-fs.en.md)
 
 <br>
 <hr>
@@ -397,7 +400,7 @@ transition: slide-left
 
 # Exercise
 
-- Create a URL shortener service
+- Create a server that extract query parameters from a URL (ex: `/search?term=nodejs`) and sends them back in the response.  Can use `url` module to parse the request URL or the modern `new URL()` way 
 
 ---
 transition: slide-left
