@@ -412,3 +412,5 @@ transition: slide-left
 - Start Freecodecamp "Managing Packages with NPM" followed by "Basic Node and Express"
 - Challenge: Set up a server with multiple routes (Ex: `/`, `/about`, `/contact`) that returns different responses based on `req.url`.  This mimics how web frameworks handle routing.
    - Stretch Goal: write a server that serves an HTML file or an image from the file system when a specific route (ex: `/about`) is accessed.  Combine modules `http` with `fs` for this
+   - [How to work with Files in Node](https://www.freecodecamp.org/news/how-to-work-with-files-in-node-js/)
+   - [How to Read/write Files with Node](https://www.freecodecamp.org/news/how-to-read-and-write-files-with-nodejs/)
