@@ -376,6 +376,7 @@ transition: slide-left
 (remainder of time) Challenge + Github exercise
 
 - Challenge: Create server code that gets a search term from the command line (ex: happy) and makes a fetch request to [Giphy API](https://developers.giphy.com/explorer/) using the given API_KEY to display gifs related to the search term
+- Tips: [Nullish coalescing operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing) How to debug in node?
 - Github Exercise: 
    1. Create Github Repo
    1. Commit and push code to repo 
