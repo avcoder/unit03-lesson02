@@ -249,6 +249,8 @@ class: text-left
 - ▶️ [Node.js crash course](https://www.youtube.com/watch?v=32M1al-Y6Ag)
 - 🍎 [Node tutorial](https://www.w3schools.com/nodejs/nodejs_modules.asp)
 - 📂 [File system Module](https://github.com/nodejs/nodejs.dev/blob/aa4239e87a5adc992fdb709c20aebb5f6da77f86/content/learn/node-js-modules/node-module-fs.en.md)
+- 📖 [Git and GitHub Tutorial article](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
+- ▶️ [Git and Github Tutorial video](https://www.youtube.com/watch?v=RGOj5yH7evk)
 
 <br>
 <hr>
