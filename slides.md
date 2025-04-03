@@ -375,8 +375,8 @@ transition: slide-left
 # Exercise
 (remainder of time) Challenge + Github exercise
 
-- Create a server that extract query parameters from a URL (ex: `/search?term=nodejs`) and sends them back in the response.  Can use `url` module to parse the request URL or the modern `new URL()` way 
-- Exercise: 
+- Challenge: Create server code that gets a search term from the command line (ex: happy) and makes a fetch request to [Giphy API](https://developers.giphy.com/explorer/) using the given API_KEY to display gifs related to the search term
+- Github Exercise: 
    1. Create Github Repo
    1. Commit and push code to repo 
 
