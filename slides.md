@@ -387,5 +387,6 @@ transition: slide-left
 
 # Homework
 
+- Assignment #2 due this Apr. 13 midnight EST
 - Goto: https://www.freecodecamp.org/learn/back-end-development-and-apis/
 - Start Freecodecamp ["Managing Packages with NPM"](https://www.freecodecamp.org/learn/back-end-development-and-apis/) followed by "Basic Node and Express"
