@@ -46,7 +46,7 @@ console.log("__filename is: ", __filename);
 console.log("global is: ", global);
 console.log("module is: ", module);
 console.log("exports is: ", exports);
-console.log("process is: ", process)
+console.log("process is: ", process) // see .argv
 ```
 
 - What is the npm command to initialize a node project? 
@@ -234,8 +234,8 @@ console.log(hash.digest("hex")); // Output: SHA-256 hash of 'Hello, world!'
 ---
 layout: image-right
 transition: slide-left
-image: /assets/addy.png
-backgroundSize: 500px 350px
+image: /assets/rauch.png
+backgroundSize: 500px 300px
 class: text-left
 ---
 
@@ -264,12 +264,8 @@ transition: slide-left
 ---
 
 # External Packages and `npm`
-(5 min) Utilize the command line
 
 - common 3rd party modules:  `body-parser` `dotenv` `uuid` `cors` `lodash` `date-fns`
-- Demo: Download my own [myWords library](https://www.npmjs.com/package/mywords) from npm so you can use it for [madlibs](https://images.squarespace-cdn.com/content/v1/56f0887b1bbee0ad7d49d1a8/1490014586011-8A2DBQCGUQZYTH1ZIXMC/OT+Activity+of+the+Day-+Handwriting+Skills) 
-- Problem: If wish to use module for front end, VS Code Live Server won't work with node_modules -- why not?
-- Solution: need a module bundler like Parcel or Webpack
 
 <!--
 - import { myWords } from "mywords";
@@ -342,10 +338,10 @@ transition: slide-left
 ```js
 require("dotenv").config();
 
+console.log(process.env);
 console.log(process.env.DB_PASSWORD);
 ```
 
-- take a minute to log out `process` and see what's there (ex: `.argv` `.cwd()`)
 
 <!--
 -->
@@ -375,9 +371,10 @@ transition: slide-left
 # GitHub Repositories
 (20 min) Set up a repository in GitHub
 
-- Git includes the options to keep repositories in the cloud (GitHub, BitBucket, GitLab)
-- Exercise: set up a remote repository to work using GitHub Desktop
-- Push a commit to your GitHub repo
+- Copy/paste my `express()` code a few slides ago
+- Exercise: 
+   1. Create Github Repo
+   1. Commit and push code to repo 
 
 <!--
 -->
