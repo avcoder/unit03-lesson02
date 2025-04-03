@@ -38,9 +38,20 @@ transition: slide-left
 # Recap
 (10 min) What website can you search to check if there is an npm module for that topic?
 
+- What is the basic command to run a node file?
+- Global variables:
+```js
+console.log("__dirname is: ", __dirname);
+console.log("__filename is: ", __filename);
+console.log("global is: ", global);
+console.log("module is: ", module);
+console.log("exports is: ", exports);
+console.log("process is: ", process)
+```
+
+- What is the npm command to initialize a node project? 
 - what is the command to install a module via `npm`?
-- where do installations go?
-- [MDN Object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring#object_destructuring)
+   - where do these installations go?
 
 <style>
 h1 {
@@ -61,8 +72,24 @@ h1 {
 transition: slide-left
 ---
 
+# Modules
+(30 min) How are modules created and used?
+
+- Create math.js file with add/subtract functions and export/import it to use it
+   - try old CJS `module.exports` way
+   - try new ES6 `import` way
+   - try old CJS `exports` way
+- `npm install` https://www.npmjs.com/package/random-poll and try using it
+   - change my index.js file so it uses `module.exports` way
+   - change my index.js file so it uses `import` way
+- instead of `node index.js` use `npm start` way
+
+---
+transition: slide-left
+---
+
 # Built-in Modules for Node.js
-(5 min) Node.js has core internal modules
+Node.js has core internal modules
 
 - Other built-in modules include: `http` `fs` `path` `url` `events` `crypto` etc...
 - Node Docs: [http](https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener) (we did an example of this last week)
@@ -106,7 +133,7 @@ fs.writeFile('example.txt', content, (err) => {
   }
 });
 ```
-
+- When creating a node web server, how do you think html/css/js/jpg files are served?
 <!--
 -->
 
@@ -146,7 +173,7 @@ transition: slide-left
 // const url = require('url');
 
 const urlString = 'https://www.example.com:8080/pathname/?search=test#hash';
-// const parsedUrl = url.parse(urlString); // this way is now depracated
+// const parsedUrl = url.parse(urlString); // hover over .parse > depracated
 const parsedUrl = new URL(urlString); // this is the recommended way 
 
 console.log(parsedUrl);
@@ -202,45 +229,6 @@ console.log(hash.digest("hex")); // Output: SHA-256 hash of 'Hello, world!'
 ```
 
 <!--
--->
-
----
-transition: slide-left
----
-
-# Creating modules exports and `require()`
-(30 min) Use of `require()` function
-
-- if using ES6 import, ensure package.json has `"type": "module"`
-```js
-// index.js
-import { factorial, sum } from "./math.js"
-console.log(factorial, sum)
-```
-
-- if using CJS, ensure package.json no longer has `"type": "module",`
-```js
-const { factorial, sum } = require("./math");
-console.log(factorial, sum)
-```
-```js
-// math.js
-function factorial(n) {
-  if (n <= 1) return 1;
-  return n * factorial(n - 1);
-}
-
-function sum(a, b) { return a + b }
-
-module.exports = { 
-  factorial, 
-  sum, 
-};
-```
-
-<!--
-- console.log(module) from both math.js and math2.js
-- CJS and ES6 import is incompatible
 -->
 
 ---
