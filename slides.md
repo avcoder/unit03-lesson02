@@ -376,7 +376,6 @@ transition: slide-left
 (remainder of time) Challenge + Github exercise
 
 - Create a server that extract query parameters from a URL (ex: `/search?term=nodejs`) and sends them back in the response.  Can use `url` module to parse the request URL or the modern `new URL()` way 
-- Copy/paste my `express()` code a few slides ago
 - Exercise: 
    1. Create Github Repo
    1. Commit and push code to repo 
