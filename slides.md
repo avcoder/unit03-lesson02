@@ -133,7 +133,9 @@ fs.writeFile('example.txt', content, (err) => {
   }
 });
 ```
-- When creating a node web server, how do you think html/css/js/jpg files are served?
+- Exercise: write a server that serves an HTML file or an image from the file system when a specific route (ex: `/about`) is accessed.  Combine modules `http` with `fs` for this
+   - [How to work with Files in Node](https://www.freecodecamp.org/news/how-to-work-with-files-in-node-js/)
+   - [How to Read/write Files with Node](https://www.freecodecamp.org/news/how-to-read-and-write-files-with-nodejs/)
 <!--
 -->
 
@@ -368,24 +370,14 @@ console.log(uniqId());
 transition: slide-left
 ---
 
-# GitHub Repositories
-(20 min) Set up a repository in GitHub
+# Exercise
+Challenge + Github exercise
 
+- Create a server that extract query parameters from a URL (ex: `/search?term=nodejs`) and sends them back in the response.  Can use `url` module to parse the request URL or the modern `new URL()` way 
 - Copy/paste my `express()` code a few slides ago
 - Exercise: 
    1. Create Github Repo
    1. Commit and push code to repo 
-
-<!--
--->
-
----
-transition: slide-left
----
-
-# Exercise
-
-- Create a server that extract query parameters from a URL (ex: `/search?term=nodejs`) and sends them back in the response.  Can use `url` module to parse the request URL or the modern `new URL()` way 
 
 ---
 transition: slide-left
@@ -394,8 +386,4 @@ transition: slide-left
 # Homework
 
 - Goto: https://www.freecodecamp.org/learn/back-end-development-and-apis/
-- Start Freecodecamp "Managing Packages with NPM" followed by "Basic Node and Express"
-- Challenge: Set up a server with multiple routes (Ex: `/`, `/about`, `/contact`) that returns different responses based on `req.url`.  This mimics how web frameworks handle routing.
-   - Stretch Goal: write a server that serves an HTML file or an image from the file system when a specific route (ex: `/about`) is accessed.  Combine modules `http` with `fs` for this
-   - [How to work with Files in Node](https://www.freecodecamp.org/news/how-to-work-with-files-in-node-js/)
-   - [How to Read/write Files with Node](https://www.freecodecamp.org/news/how-to-read-and-write-files-with-nodejs/)
+- Start Freecodecamp ["Managing Packages with NPM"](https://www.freecodecamp.org/learn/back-end-development-and-apis/) followed by "Basic Node and Express"
